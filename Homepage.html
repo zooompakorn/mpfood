@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>M.P Food Production</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Homepage.css" />
+  </head>
+  <body>
+    <!-- Header + Nav -->
+    <header>
+      <div class="top">
+        <div class="logo">
+          <img src="Image/logo-removebg-preview.png" alt="" />
+        </div>
+        <div class="top-right" id="top-right">
+          <div>Home</div>
+          <div>Product</div>
+          <div>About</div>
+          <div>Contact</div>
+        </div>
+        <div class="hamburger_bar" onclick="test()">
+          <i class="fa-solid fa-bars" id="hamburger"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Welcome -->
+    <div class="welcome">
+      <img src="Image/welcome1.jpg" alt="" />
+      <div>
+        <p class="p1">ฟองเต้าหู้</p>
+        <p class="p2">แผ่นใหญ่สะใจ ใช้งานง่าย ทอดกรอบอร่อยขั้นสุด</p>
+        <p class="p3">บริการจัดส่งทั่วประเทศ</p>
+        <div class="inputDiv">
+          <input type="button" value="Product" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Company -->
+    <div class="Video_Company_Container">
+      <div class="Video_div">
+        <video
+          src="Video/Video.mp4"
+          id="Video_company"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <div class="Text_div">
+        <h1>WHO WE ARE ?</h1>
+        <div class="line_underH1"></div>
+        <div class="article">
+          <p>
+            หากพูดถึงอาหารที่อุดมไปด้วยโปรตีน
+            และสามารถนำมาประกอบอาหารได้หลากหลาย ทั้งของคาวและของหวาน
+            แน่นอนว่าหนึ่งในอาหารที่เพื่อนๆ นึกถึงนั้นต้องมี ฟองเต้าหู้
+          </p>
+          <p>
+            สำหรับฟองเต้าหู้นั้น ได้มาจากการต้มน้ำนมถั่วเหลือง
+            ซึ่งก็มีทั้งแบบแท่ง แบบผูกเป็นปม หรือแบบผงก็มีนะคะ แล้วเพื่อนๆ
+            รู้ไหมคะว่า นอกจากความอร่อยแล้ว ฟองเต้าหู้แห้ง 100 กรัม
+            ยังให้พลังงานถึง 461 กิโลแคลอรี โปรตีน 47 กรัม และ ไขมัน 28 กรัม
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    const top_right = document.getElementById("top-right");
+
+    window.onresize = function () {
+      if (window.innerWidth > 850) {
+        top_right.style.display = "flex";
+      } else {
+        top_right.style.display = "none";
+      }
+    };
+    function test() {
+      console.log("Hello");
+      const menu = document.getElementById("menu_hamburger");
+      if (top_right.style.display === "none") {
+        top_right.style.display = "flex";
+      } else {
+        top_right.style.display = "none";
+      }
+    }
+  </script>
+  <script
+    src="https://kit.fontawesome.com/a34fa7ecb9.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
