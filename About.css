@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.Main_Container {
+  width: 100%;
+  height: 1000px;
+  background-color: #df6d14;
+}

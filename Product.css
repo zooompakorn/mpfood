@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top_Menu_Container {
+  width: 100%;
+  height: 300px;
+  background-color: #9dc08b;
+}
+
+.Product_list_Container {
+  width: 100%;
+  height: 1000px;
+  background-color: #cbe3bf;
+}
