@@ -44,10 +44,6 @@ body {
   color: #ffc000;
   font-weight: bolder;
 }
-.top-right > #home {
-  color: #ffc000;
-  opacity: 1;
-}
 
 .top-right > a {
   height: 50%;
