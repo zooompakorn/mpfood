@@ -44,6 +44,10 @@ body {
   color: #ffc000;
   font-weight: bolder;
 }
+.top-right > #home {
+  color: #ffc000;
+  opacity: 1;
+}
 
 .top-right > a {
   height: 50%;
@@ -476,17 +480,16 @@ footer {
     z-index: 99;
   }
   .top-right > a {
-    opacity: 1;
+    opacity: 0.8;
     background-color: #009900;
     width: 10%;
+    padding-bottom: 5px;
     margin: 0;
     display: flex;
     justify-content: center;
-    
   }
   .top-right > a:hover {
     cursor: pointer;
-
   }
   .logo {
     transition: 2s ease-in-out;
@@ -516,9 +519,7 @@ footer {
     height: auto;
     flex-wrap: wrap;
   }
-  /* .product_list {
-    grid-template-columns: 1fr 1fr;
-  } */
+
   footer {
     display: flex;
     flex-direction: column;
@@ -573,7 +574,7 @@ footer {
   }
   .company_footer,
   .contact_footer {
-    width: 500px;
+    width: 430px;
     margin: 0px;
     padding: 0px;
   }
