@@ -304,10 +304,148 @@ body {
 footer {
   background-color: #009900;
   width: 100%;
-  height: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.company_footer {
+  width: 600px;
+  height: 90%;
+  margin-left: 30px;
+}
+
+.company_name_footer {
+  width: 100%;
+  height: 30%;
+}
+.logo_footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo_footer > img {
+  width: 100px;
+  height: 100%;
+}
+.logo_footer > h1 {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company_short_text {
+  width: 100%;
+  height: 30%;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.company_short_text > p {
+  width: 70%;
+  height: auto;
+  font-size: 17px;
+}
+
+.link_to {
+  width: 100%;
+  height: 20%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link_to > a {
+  margin: 0px 10px;
+}
+.link_to > a > i {
+  font-size: 35px;
+  color: #ffc000;
+  margin: 0px 5px;
+}
+
+.nav_footer {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav_footer > a {
+  text-decoration: none;
+  margin: 10px 0px;
+  font-size: 30px;
+  color: #ffc000;
+  transition: box-shadow 0.3s ease-in;
+}
+.nav_footer > a:hover {
+  box-shadow: inset 0 -2px 0 #ffc000;
+}
+
+.contact_footer {
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  padding-right: 20px;
+}
+.contact_footer > h3 {
+  font-weight: 300;
+}
+.contact_footer > p {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+.contact_footer > p > span {
+  font-weight: 900;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone_footer {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.phone_footer > i {
+  font-size: 20px;
+  margin: 0px 5px;
+  color: #ffc000;
+}
+
+.phone_footer > p {
+  margin-left: 10px;
+  font-size: 20px;
 }
 /* End footer */
 
+/* Credit Web */
+.credit_web {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #009900;
+  background-color: #ffc000;
+}
+/* End Credit Web */
 /* Responsive Web */
 
 @media (max-width: 850px) {
@@ -371,6 +509,24 @@ footer {
   /* .product_list {
     grid-template-columns: 1fr 1fr;
   } */
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .company_footer {
+    margin-top: 30px;
+  }
+
+  .contact_footer,
+  .nav_footer {
+    margin: 15px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Phone Responsive */
@@ -404,5 +560,26 @@ footer {
   .product_list {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+  }
+  .company_footer,
+  .contact_footer {
+    width: 500px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .company_footer > .company_short_text {
+    width: 100%;
+  }
+  .company_footer > p {
+    width: 100%;
+  }
+  .contact_footer > h1 {
+    font-size: 30px;
+  }
+  .contact_footer > p {
+    font-size: 15px;
+  }
+  .credit_web {
+    font-size: 15px;
   }
 }
