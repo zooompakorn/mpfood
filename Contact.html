@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="Homepage.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Homepage.css" />
     <link rel="stylesheet" href="Contact.css" />
-      <link
+    <link
       href="https://fonts.googleapis.com/css2?family=Kanit&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
-</head>
- <!-- Header -->
+  </head>
+  <body>
+    <!-- Header -->
     <header>
       <div class="top">
         <div class="logo">
@@ -29,8 +30,66 @@
       </div>
     </header>
     <!-- Main Contact -->
-    <div class="Contact_Container"></div>
- 
+    <div class="Contact_Container">
+      <div class="Contact_Right">
+        <h1>ฝ่ายขาย และ บริการลูกค้า</h1>
+        <div class="sell_container1">
+          <i class="fa-solid fa-user"></i>
+          <div class="info_sell">
+            <h2>คุณ YYYY</h2>
+            <h4>XXX-XXX-XXXX</h4>
+          </div>
+        </div>
+        <div class="sell_container1">
+          <i class="fa-solid fa-user"></i>
+          <div class="info_sell">
+            <h2>คุณ YYYY</h2>
+            <h4>XXX-XXX-XXXX</h4>
+          </div>
+        </div>
+        <div class="sell_container1">
+          <i class="fa-solid fa-user"></i>
+          <div class="info_sell">
+            <h2>คุณ YYYY</h2>
+            <h4>XXX-XXX-XXXX</h4>
+          </div>
+        </div>
+      </div>
+      <div class="Contact_Left">
+        <h1>ติดต่อสอบถาม</h1>
+        <div class="form_group">
+          <input type="text" name="" id="" placeholder="ชื่อผู้ติดต่อ" />
+          <label class="form_label">ชื่อผู้ติดต่อ</label>
+        </div>
+        <div class="form_group">
+          <input
+            type="tel"
+            name=""
+            id=""
+            placeholder="เบอร์ผู้ติดต่อ"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
+          <label class="form_label">เบอร์ผู้ติดต่อ</label>
+        </div>
+        <div class="form_group">
+          <textarea
+            name=""
+            id="detail"
+            placeholder="รายละเอียดที่ต้องการติดต่อ"
+          ></textarea>
+          <label class="form_label" id="form_label_detail"
+            >รายละเอียดที่ต้องการติดต่อ</label
+          >
+        </div>
+
+        <div class="button_contact_container">
+          <input type="button" value="ส่งข้อความ" id="button_contact" />
+          <div class="blank_top"></div>
+          <div class="blank_bottom"></div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer>
       <div class="company_footer">
