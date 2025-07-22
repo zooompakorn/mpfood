@@ -191,9 +191,15 @@ textarea::placeholder {
     margin-top: 20px;
   }
 }
-/* 
-@media (max-width: 24400px) {
-  .Contact_Container {
-    height: 800px;
+
+@media (max-width: 430px) {
+  .form_group > #detail {
+    padding-top: 13px;
   }
-} */
+  .form_group textarea:focus + #form_label_detail,
+  .form_group textarea:not(:placeholder-shown) + #form_label_detail {
+    transform: translate(0px, -30px);
+
+    font-size: 18px;
+  }
+}
