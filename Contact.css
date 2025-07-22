@@ -147,6 +147,7 @@ textarea::placeholder {
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding-bottom: 20px;
 }
