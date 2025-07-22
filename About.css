@@ -1,9 +1,134 @@
-* {
-  padding: 0;
-  margin: 0;
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .Main_Container {
   width: 100%;
-  height: 1000px;
-  background-color: #df6d14;
+  height: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* top company_announce */
+.top_container {
+  width: 95%;
+  height: auto;
+  justify-items: center;
+  padding: 10px 10px;
+}
+.h1_top {
+  margin-top: 10px;
+}
+.p_top {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+/* company_announce */
+.company_announce {
+  width: 90%;
+  justify-self: center;
+  height: auto;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  margin: 25px 0;
+}
+
+.notice_board {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+}
+.notice_board > i {
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.notice_board > p {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  padding: 20px;
+  color: black;
+}
+
+.nb1,
+.nb3 {
+  border: 7px #ffc107;
+  border-style: inset;
+  color: #5cb338;
+}
+.nb2,
+.nb4 {
+  border: 7px outset #9dc08b;
+  color: #ffc107;
+}
+.trophy_company {
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  margin: 0 10px;
+}
+.trophy_company > i {
+  margin: 30px;
+}
+
+@media (max-width: 1700px) {
+  .company_announce {
+    grid-template-columns: 1fr 1fr;
+  }
+  .notice_board > p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 850px) {
+  .p_top {
+    width: 90%;
+  }
+  .notice_board {
+    height: auto;
+  }
+  .trophy_company > i {
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .trophy_company {
+    width: 100%;
+    height: auto;
+
+    font-size: 40px;
+    margin: 20px 0;
+  }
+  .trophy_company > i {
+    margin: 0;
+    padding: 0 10px;
+  }
+  .company_announce {
+    grid-template-columns: 1fr;
+  }
 }

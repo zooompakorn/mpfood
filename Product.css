@@ -1,21 +1,134 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+html,
 body {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  font-style: italic;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_container {
+  width: 100%;
+  height: auto;
+  flex: 1;
+  background-color: #cbe3bf;
+  display: flex;
+  flex-direction: column;
 }
 
 .top_Menu_Container {
   width: 100%;
-  height: 300px;
-  background-color: #9dc08b;
+  height: auto;
+  background-color: #cbe3bf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.top_Menu_Container > h1 {
+  font-size: 60px;
+}
+.select_container {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  position: relative;
+}
+.select > button {
+  width: 200px;
+  padding: 30px 20px;
+  font-size: 20px;
+  margin: 0 10px;
+  background-color: #cbe3bf;
+  border: none;
+  opacity: 0.4;
+  font-weight: 900;
+  transition: opacity 0.2s ease-in;
+}
+.select > button:hover {
+  opacity: 1;
+}
+
+.custom-underline {
+  width: 150px;
+  height: 5px;
+  position: absolute;
+  background-color: #ffc000;
+  left: 35px;
+  top: 60px;
 }
 
 .Product_list_Container {
   width: 100%;
-  height: 1000px;
-  background-color: #cbe3bf;
+  height: auto;
+  background-color: #f1ffea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Product_list {
+  margin: 20px 0;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.product {
+  width: 250px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 20px;
+  transition: transform 1s;
+  background-color: rgb(231, 231, 231,0.6);
+}
+.product:hover {
+  border: 3px solid #ffc000;
+  transform: scale(1.02);
+}
+
+/* Infomation Product */
+.img {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.img > img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.name_product {
+  width: 100%;
+  height: 20%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.link_to_productDetail {
+  text-decoration: none;
+}
+
+@media (max-width: 850px) {
+  .select_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .select {
+    justify-self: center;
+  }
 }
